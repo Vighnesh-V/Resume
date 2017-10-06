@@ -1,0 +1,233 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{}{Vighnesh Vijay}{ Sophomore Candidate in Computer Science \\
+\href{mailto:vighnesh@seas.upenn.edu}{vighnesh@seas.upenn.edu} | 267.237.7016
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{University of Pennsylvania}
+\descript{Candidate for BSE in Computer Science}
+\location{Expected May 2020 | Philadelphia, PA \\ Cum. GPA: 3.08}
+\sectionsep
+
+\subsection{Bangkok Patana School}
+\location{Grad. May 2016 |  Bangkok, Thailand}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \href{https://github.com/Vighnesh-V}{\custombold{Vighnesh-V}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+\textbullet{}(In Progress) Advanced Programming (Haskell)
+\sectionsep
+\subsection{Undergraduate}
+\sectionsep
+\descript{Complete}
+\textbullet{}Data Structures and Algorithms\\
+\textbullet{}Mathematical Foundations of Computer Science\\
+\textbullet{}Automata, Computatbility, and Complexity\\
+\textbullet{}Programming Languages and Techniques(Java and OCaml)\\
+\textbullet{}Intro. to Mechanical Design \\
+\textbullet{}Market and Social Systems on the Internet\\
+\sectionsep
+\descript{In Progress}
+\textbullet{}Introduction to Computer Systems\\
+\textbullet{}JavaScript\\
+\textbullet{}Probability\\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Proficient:}
+Java \textbullet{}   C \textbullet{}  MATLAB \textbullet{} Python
+\textbullet{}  \LaTeX\ \\
+\location{Competent}
+Haskell \textbullet{} OCaml \textbullet{} CSS \textbullet{} JavaScript \\
+\sectionsep
+\subsection{General}
+Git \textbullet{} JQuery \textbullet{} Bootstrap  \\
+SolidWorks \textbullet{} Backbone \\
+3D Printing
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{University of Pennsylvania}
+\descript{| Research Intern }
+\location{June 2017 – August 2017 | Philadelphia, PA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designed in a team of one other undergraduate an extruder for a 3D Printer capable of extruding custom made inks (Worked with \textbf{\href{raney@seas.upenn.edu}{ Professor Jordan Raney}}).
+\item Researched and Implemented Machine Vision and Classification for the 3D Printer. Programmed the printer to be able to recognize when its own extruder had an issue and stop the print appropriately. Made use of Machine Vision and Learning techniques implemented using MATLAB.
+\item Contributed directly to the other graduate students' work by enabling them to use our printer to design structures with a variety of mechanical properties.
+\end{tightemize}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Neuro Evolution of Augmenting Topologies Snake (N.E.A.T Snake)}
+\descript{ Python | Neural Nets | Gaming | Genetic Algorithms }
+\location{July 2017 – Present | Philadelphia, PA}
+In an effort to learn more about Machine Learning, I implemented a reduced version of the game Snake, where the goal was to have a square controlled by an AI navigate to the position of a beacon. The Neural Net was implemented from scratch according to the text \textit{AI Techniques for Game Programming}. In an effort to extend the program, I have been implementing the NEAT algorithm for Neural Nets according to the paper by \textbf{\href{http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf}{Profs. Kenneth Stanley and Risto Miikkulainen}} and inspired by Youtuber Sethbling's application of the algorithm to \textbf{\href{https://www.youtube.com/watch?v=qv6UVOQ0F44}{Mario}}.
+\sectionsep
+\\
+
+\runsubsection{Analysing Twitter Data}
+\descript{ NodeXL | Graph Visualizations| Twitter | Social Systems Project}
+\location{Freshman Spring | Philadelphia, PA}
+Made use of NodeXL to collect Twitter Data. Gephi was used to visualize this data as a Graph Structure. We analysed the connectivity of Twitter Graphs using the mechanism of Hashtags.
+\sectionsep
+\\
+
+\runsubsection{Quantum Tic Tac Toe}
+\descript{ Java | Intro Programming Project | Swing}
+\location{Freshman Fall | Philadelphia, PA}
+Implemented a two player version of the game Quantum Tic Tac Toe. Used some simple Graph theory to motivate algorithm design in the game.
+\sectionsep
+\\
+
+\runsubsection{Personal Web Resume}
+\descript{ Javascript | JQuery | CSS | Bootstrap}
+\location{January 2016 - February 2016 | Bangkok, TH}
+To learn more about web design I created a web version of my resume at the time.
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+\begin{tabular}{rll}
+2016	     & top 1\%ile  & Academic Excellence Award, 43/45 International Baccalaureate\\
+2016	     & top \%ile  & 7/7 Points Further Mathematics International Baccalaureate\\
+2014         & 8 A* IGCSE & Academic Excellence Award
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Extracurriculars
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Extracurriculars}
+
+\begin{tabular}{rl}
+2017 	& Dining Philosophers Club for raising interest in CS within the Penn Community  \\
+2017   & Boxing \\
+2016 & Engineering Freshman Senior Design Mentee: Water Sampling Drone
+
+\end{tabular}
+\sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
